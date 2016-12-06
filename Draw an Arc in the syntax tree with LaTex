@@ -1,0 +1,8 @@
+
+%draw an arc in the syntax tree%
+%suitable for "phase" illustration  
+\begin{forest}
+[DP, [Spec][D', name=phaseDP[\{{\small{}gen}\}][nP, name=left[AP][nP]]]]
+\draw[dashed]([xshift=-25pt]left) arc[start angle=140,end angle=60,radius=2.0cm] node [pos=1.2]{\textit{spell-out of DP}};
+\draw[]([xshift=-25pt]phaseDP) arc[start angle=140,end angle=60,radius=2.0cm] node [pos=1.2]{\textit{DP phase}};
+\end{forest}
