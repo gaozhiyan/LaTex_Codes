@@ -4,7 +4,8 @@
 %% the "arc" function is what you want with the forest package %%
 
 \begin{forest}
-[DP, [Spec][D', name=phaseDP[\{{\small{}gen}\}][nP, name=spellOut[AP][nP]]]]
-\draw[dashed]([xshift=-25pt]spellOut) arc[start angle=140,end angle=60,radius=2.0cm] node [pos=1.2]{\textit{spell-out of DP}};
-\draw[]([xshift=-25pt]phaseDP) arc[start angle=140,end angle=60,radius=2.0cm] node [pos=1.2]{\textit{DP phase}};
+[DP, name=DPphase [Spec][D'[\{{\small{}gen}\}][nP, name=spellout[AP][nP]]]]
+\draw[dashed]([xshift=-25pt]spellout) arc[start angle=140,end angle=60,radius=2.0cm] node [pos=1.2]{\textit{spell-out of DP}};
+\draw[]([xshift=-25pt]DPphase) arc[start angle=140,end angle=60,radius=2.0cm] node [pos=1.2]{\textit{DP phase}};
 \end{forest}
+
