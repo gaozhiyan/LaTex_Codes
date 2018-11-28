@@ -1,5 +1,5 @@
 
-%%draw an arc in the syntax tree%%
+%%draw an arc on a syntax tree%%
 %%suitable for "phase" illustration%%
 %% the "arc" function is what you want with the forest package %%
 
